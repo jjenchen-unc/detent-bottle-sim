@@ -24,7 +24,7 @@ video = ["imageio[ffmpeg]==2.37.0"]
 dev = ["pytest==8.4.2", "httpx==0.28.1"]
 
 [tool.setuptools.packages.find]
-include = ["detent_bottle*"]
+include = ["detent_bottle*", "integration_pi05*"]
 
 [tool.setuptools.package-data]
 detent_bottle = ["assets/panda/*.xml", "assets/panda/LICENSE.robosuite", "assets/panda/meshes/*.stl"]

@@ -1,0 +1,13 @@
+{
+  "checkpoint": "gs://openpi-assets/checkpoints/pi05_droid",
+  "config": "pi05_droid",
+  "cameras": ["agentview", "left_wrist"],
+  "image_size": 224,
+  "max_steps": 2400,
+  "execution_ticks": 4,
+  "prompt": "Fold the safety loop fully down, then press the rocker release to open the bottle. The bottle is held steady.",
+  "host": "localhost",
+  "port": 8000,
+  "connection_timeout": 600,
+  "inference_timeout": 60
+}

@@ -158,3 +158,7 @@ Author: Jr-Jen Chen. MIT licence (see `LICENSE`).
 The Panda arm model and meshes in `detent_bottle/assets/panda/` come from robosuite 1.4.0
 (MIT, Stanford Vision and Learning Lab and UT Robot Perception and Learning Lab). See
 `detent_bottle/assets/panda/LICENSE.robosuite`.
+
+## Optional π₀.₅ integration
+
+See [integration setup and limitations](docs/pi05_integration.md) for the pretrained DROID client, hybrid controller, evaluation CLI, and policy-server contract.

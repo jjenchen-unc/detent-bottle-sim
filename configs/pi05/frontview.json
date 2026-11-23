@@ -1,0 +1,22 @@
+{
+  "checkpoint": "gs://openpi-assets/checkpoints/pi05_droid",
+  "config": "pi05_droid",
+  "expected_policy": {
+    "openpi_revision": "215abfb217dbac7d5f1273282331b9b1866c0479",
+    "configuration": "pi05_droid",
+    "checkpoint": "gs://openpi-assets/checkpoints/pi05_droid",
+    "action_horizon": 15,
+    "external_action_dim": 8
+  },
+  "cameras": ["frontview", "left_wrist"],
+  "external_camera": "frontview",
+  "image_size": 224,
+  "max_steps": 2400,
+  "execution_ticks": 4,
+  "sampling_seed": 0,
+  "prompt": "Fold the safety loop fully down, then press the rocker release to open the bottle.",
+  "host": "localhost",
+  "port": 8000,
+  "connection_timeout": 600,
+  "inference_timeout": 60
+}

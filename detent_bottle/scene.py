@@ -98,7 +98,8 @@ def scene(wrist_cameras='hand', bottle_pose=None):
     body.set('pos', '0 0 .8005'); body.set('childclass', 'bottle')
     if bottle_pose is not None:
         x, y, yaw_deg = bottle_pose
-        body.set('pos', f'{x} {y} .8005'); body.set('euler', f'0 0 {yaw_deg}')
+        # The compiler uses angle="radian", so the documented degrees must be converted.
+        body.set('pos', f'{x} {y} .8005'); body.set('euler', f'0 0 {math.radians(yaw_deg)}')
     ET.SubElement(body, 'freejoint', name='bottle_free')
     ET.SubElement(body, 'inertial', pos='0 0 .11', mass='.35', diaginertia='.00153 .00153 .000227')
     # Primitive outer shells and convex mechanism pieces are physical; cosmetic

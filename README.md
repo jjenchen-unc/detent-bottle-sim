@@ -32,7 +32,8 @@ Requires Python >= 3.10.
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
-pip install -e ".[dev]"          # core + pytest; add [agent] for the LLM runner, [video] for mp4 output
+pip install -e ".[dev]"          # core + pytest; add [agent] for the LLM runner, [video] for mp4 output,
+                                 # [act] for the ACT baseline in bench/
 export MUJOCO_GL=egl             # headless GPU rendering; use MUJOCO_GL=osmesa on CPU-only machines
 pytest -q
 ```

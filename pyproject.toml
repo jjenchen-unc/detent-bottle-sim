@@ -21,6 +21,7 @@ dependencies = [
 [project.optional-dependencies]
 agent = ["httpx==0.28.1"]
 video = ["imageio[ffmpeg]==2.37.0"]
+act = ["torch==2.8.0", "torchvision==0.23.0"]
 dev = ["pytest==8.4.2", "httpx==0.28.1"]
 
 [tool.setuptools.packages.find]
